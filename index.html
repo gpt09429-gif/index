@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 900px;
+            margin: 30px auto;
+        }
+        .photo {
+            text-align: center;
+        }
+        .photo img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            display: block;
+        }
+        .photo p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Faiz Ramadhan Prastio💙</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Pacifico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #06111f;
+    color: white;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: #168cff;
+    filter: blur(150px);
+    opacity: .18;
+    top: -200px;
+    left: -150px;
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    background: #ffffff;
+    filter: blur(170px);
+    opacity: .08;
+    right: -150px;
+    bottom: -100px;
+    z-index: -2;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 700px;
+    animation: fadeUp 1.5s ease;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-size: 13px;
+    color: #9fd3ff;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: clamp(55px, 13vw, 110px);
+    line-height: 1;
+    color: white;
+    text-shadow:
+        0 0 15px #1597ff,
+        0 0 40px rgba(21,151,255,.5);
+}
+
+.hero h2 {
+    font-size: clamp(25px, 5vw, 45px);
+    margin-top: 15px;
+    color: #65baff;
+}
+
+.date {
+    margin-top: 20px;
+    font-size: 17px;
+    color: #d9eaff;
+}
+
+.open-btn {
+    margin-top: 35px;
+    padding: 15px 35px;
+    border: 1px solid rgba(255,255,255,.4);
+    border-radius: 50px;
+    background: rgba(255,255,255,.1);
+    backdrop-filter: blur(10px);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.open-btn:hover {
+    background: white;
+    color: #06111f;
+    transform: translateY(-4px);
+}
+
+.floating {
+    position: fixed;
+    pointer-events: none;
+    z-index: 5;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+section {
+    padding: 100px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    color: #57b6ff;
+}
+
+.section-title h2 {
+    font-size: 35px;
+}
+
+.section-title p {
+    color: #aebed0;
+    margin-top: 10px;
+}
+
+.card {
+    max-width: 700px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 25px;
+    background: rgba(255,255,255,.07);
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 60px rgba(0,0,0,.3);
+}
+
+.card p {
+    color: #d9e5f0;
+    line-height: 2;
+    font-size: 15px;
+}
+
+.signature {
+    margin-top: 25px;
+    text-align: right;
+    font-family: 'Pacifico', cursive;
+    color: #65baff;
+    font-size: 22px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.photo {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.4);
+    transition: .4s;
+    color: #111;
+}
+
+.photo:nth-child(2) {
+    transform: translateY(25px) rotate(2deg);
+}
+
+.photo:nth-child(4) {
+    transform: translateY(20px) rotate(-2deg);
+}
+
+.photo:nth-child(5) {
+    transform: translateY(-15px) rotate(2deg);
+}
+
+.photo:hover {
+    transform: scale(1.05) rotate(0deg);
+    z-index: 2;
+}
+
+.photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.photo p {
+    text-align: center;
+    padding: 12px 5px 5px;
+    font-size: 13px;
+    color: #222;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.time-box {
+    width: 110px;
+    padding: 20px 10px;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(
+        145deg,
+        rgba(255,255,255,.12),
+        rgba(255,255,255,.03)
+    );
+    border: 1px solid rgba(255,255,255,.15);
+}
+
+.time-box strong {
+    display: block;
+    font-size: 35px;
+    color: #6dc2ff;
+}
+
+.time-box span {
+    font-size: 12px;
+    color: #aab9c8;
+}
+
+.surprise {
+    text-align: center;
+}
+
+.gift {
+    font-size: 100px;
+    cursor: pointer;
+    display: inline-block;
+    transition: .4s;
+    filter: drop-shadow(0 0 20px #168cff);
+}
+
+.gift:hover {
+    transform: scale(1.15) rotate(-5deg);
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 30px;
+    animation: fadeUp 1s ease;
+}
+
+.hidden-message h2 {
+    font-family: 'Pacifico', cursive;
+    color: #64baff;
+    font-size: 40px;
+}
+
+.hidden-message p {
+    margin-top: 15px;
+    color: #d6e5f3;
+}
+
+footer {
+    text-align: center;
+    padding: 60px 20px;
+    color: #8da2b6;
+}
+
+footer strong {
+    color: #5ebcff;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 75px 18px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .photo img {
+        height: 190px;
+    }
+
+    .photo:nth-child(2),
+    .photo:nth-child(4),
+    .photo:nth-child(5) {
+        transform: none;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .time-box {
+        width: 90px;
+    }
+
+    .time-box strong {
+        font-size: 27px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+
+    <div class="hero-content">
+
+        <div class="small-title">
+            A LITTLE SURPRISE FOR YOU
+        </div>
+
+        <h1>Faiz Ramadhan Prastio</h1>
+
+        <h2>Happy Birthday 🎂</h2>
+
+        <p class="date">
+            11 • OCTOBER • ✨
+        </p>
+
+        <button class="open-btn" onclick="startSurprise()">
+            ✨ Buka Surprise ✨
+        </button>
+
+    </div>
+
+</header>
+
+<section class="reveal">
+
+    <div class="section-title">
+        <p>special message</p>
+        <h2>Untuk <span>Faiz Ramadhan Prastio</span> 💙</h2>
+    </div>
+
+    <div class="card">
+
+        <p>
+            Happy Birthday, Faiz Ramadhan Prastio! 🎂
+            <br><br>
+
+            Selamat bertambah usia sayangkuu. semoga bisa menjadi pribadi yang lebih dewasa, 
+            menjadi pribadi yang bisa bertanggungjawab, dan bisa membahagiakan orang tersayangmu.
+            <br><br>
+
+            Semoga hubungan kita juga tambah membaik, kita juga sama sama belajar jadi yang terbaik ya sayang, 
+            buktiin klok kmu bisa di percaya dan kamu bisa pegang teguh tanggungjawab dan pendirianmu. 
+            aku gak minta banyak sama smn,berharap smn yang terakhir dan hanya smn seng jadi tujuan akhirku,
+            bener waktu masih panjang adewe sek podo enom tapi apa salahe di persiapne tekan sak iki. 
+            janji sama aku ya sayang jangan jahatin aku terus, smn udah kayak rumah keduaku, 
+            bener aku nggak secantik cwek ndek luar sana tapi tolong hargai perasaanku.
+            bakal tak temenin segala prosesmu. 
+            <br><br>
+
+            Semoga hari ini menjadi salah satu hari yang
+            menyenangkan dan selalu kamu ingat. ✨
+            <br><br>
+
+            Once again...
+            <br>
+            <b>Happy Birthday, Faiz Ramadhan Pratio! 🤍💙</b>
+        </p>
+
+        <div class="signature">
+            — from someone who cares 💙
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reveal">
+
+    <div class="section-title">
+
+        <p>little memories</p>
+
+        <h2>
+            Some Photos of <span>Faiz</span> 📸
+        </h2>
+
+    </div>
+        <div class="gallery">
+
+        <div class="photo">
+            <img src="WhatsApp Image 2026-10-01 at 16.16.49.jpeg" alt="Foto Faiz">
+            <p>📸 One of the moments</p>
+        </div>
+
+        <div class="photo">
+            <img src="WhatsApp Image 2026-10-01 at 16.16.50.jpeg" alt="Foto Faiz">
+            <p>🤍 Keep smiling</p>
+        </div>
+
+        <div class="photo">
+            <img src="WhatsApp Image 2026-10-01 at 16.28.03.jpeg" alt="Foto Faiz">
+            <p>✨ Another memory</p>
+        </div>
+
+        <div class="photo">
+            <img src="WhatsApp Image 2026-10-01 at 16.28.04.jpeg" alt="Foto Faiz">
+            <p>💫 Stay awesome</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="reveal">
+
+    <div class="section-title">
+
+        <p>the special date</p>
+
+        <h2>
+            11 October 🎂
+        </h2>
+
+    </div>
+
+    <div class="countdown">
+
+        <div class="time-box">
+            <strong id="days">00</strong>
+            <span>HARI</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="hours">00</strong>
+            <span>JAM</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="minutes">00</strong>
+            <span>MENIT</span>
+        </div>
+
+        <div class="time-box">
+            <strong id="seconds">00</strong>
+            <span>DETIK</span>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="surprise reveal">
+
+    <div class="section-title">
+
+        <p>one more thing...</p>
+
+        <h2>
+            There's a <span>Surprise</span> 🎁
+        </h2>
+
+    </div>
+
+    <div class="gift" onclick="openGift()">
+        🎁
+    </div>
+
+    <div class="hidden-message" id="message">
+
+        <h2>HAPPY BIRTHDAY, FAIZ RAMADHAN PRASTIO! 🎂💙</h2>
+
+        <p>
+            Semoga 11 Oktober ini menjadi awal dari
+            banyak cerita indah lainnya. ✨
+            <br><br>
+            Keep smiling. Keep going. And enjoy your day! 🤍
+            <br></br>
+            Kadonya nyusul ya sayangg...
+        </p>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    Made with 🤍 + 💙 for
+    <strong>Faiz</strong>
+
+    <br><br>
+
+    11 October ✨
+
+</footer>
+
+
+<script>
+
+function startSurprise() {
+
+    createConfetti();
+
+    setTimeout(() => {
+
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: "smooth"
+        });
+
+    }, 300);
+
+}
+
+
+/* ================= FLOATING HEARTS ================= */
+
+function createFloating() {
+
+    const items = ["💙", "🤍", "✨", "⭐", "♡"];
+
+    const element = document.createElement("div");
+
+    element.className = "floating";
+
+    element.innerHTML =
+        items[Math.floor(Math.random() * items.length)];
+
+    element.style.left =
+        Math.random() * 100 + "vw";
+
+    element.style.bottom = "-30px";
+
+    element.style.fontSize =
+        (Math.random() * 15 + 15) + "px";
+
+    element.style.animationDuration =
+        (Math.random() * 5 + 5) + "s";
+
+    document.body.appendChild(element);
+
+    setTimeout(() => {
+        element.remove();
+    }, 10000);
+}
+
+setInterval(createFloating, 700);
+
+
+/* ================= CONFETTI ================= */
+
+function createConfetti() {
+
+    const symbols = ["🎉", "✨", "💙", "🤍", "⭐", "🎂"];
+
+    for (let i = 0; i < 60; i++) {
+
+        const confetti = document.createElement("div");
+
+        confetti.innerHTML =
+            symbols[Math.floor(Math.random() * symbols.length)];
+
+        confetti.style.position = "fixed";
+
+        confetti.style.left =
+            Math.random() * 100 + "vw";
+
+        confetti.style.top =
+            "-30px";
+
+        confetti.style.fontSize =
+            (Math.random() * 15 + 15) + "px";
+
+        confetti.style.zIndex = "999";
+
+        confetti.style.transition =
+            "transform 3s linear, opacity 3s";
+
+        document.body.appendChild(confetti);
+
+        setTimeout(() => {
+
+            confetti.style.transform =
+                `translateY(110vh) rotate(${Math.random() * 720}deg)`;
+
+            confetti.style.opacity = "0";
+
+        }, 50);
+
+        setTimeout(() => {
+            confetti.remove();
+        }, 3500);
+    }
+}
+
+
+/* ================= GIFT ================= */
+
+function openGift() {
+
+    const message =
+        document.getElementById("message");
+
+    message.style.display = "block";
+
+    createConfetti();
+
+    window.scrollTo({
+        top: document.body.scrollHeight,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* ================= SCROLL REVEAL ================= */
+
+function reveal() {
+
+    const reveals =
+        document.querySelectorAll(".reveal");
+
+    reveals.forEach(element => {
+
+        const windowHeight =
+            window.innerHeight;
+
+        const elementTop =
+            element.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            element.classList.add("active");
+        }
+
+    });
+
+}
+
+window.addEventListener("scroll", reveal);
+
+reveal();
+
+
+/* ================= COUNTDOWN ================= */
+
+function updateCountdown() {
+
+    const now = new Date();
+
+    let year = now.getFullYear();
+
+    let birthday =
+        new Date(year, 9, 11, 0, 0, 0);
+
+    if (now > birthday) {
+        birthday =
+            new Date(year + 1, 9, 11, 0, 0, 0);
+    }
+
+    const difference =
+        birthday - now;
+
+    const days =
+        Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    const hours =
+        Math.floor(
+            (difference / (1000 * 60 * 60)) % 24
+        );
+
+    const minutes =
+        Math.floor(
+            (difference / (1000 * 60)) % 60
+        );
+
+    const seconds =
+        Math.floor(
+            (difference / 1000) % 60
+        );
+
+    document.getElementById("days").textContent =
+        String(days).padStart(2, "0");
+
+    document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+
+    document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+
+    document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+
+}
+
+setInterval(updateCountdown, 1000);
+
+updateCountdown();
+
+</script>
+
+</body>
+</html>342
